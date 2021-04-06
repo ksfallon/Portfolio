@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    background-size: auto;
+    background: #76797c;
+  }
+
+  aside {
+
+}
+  .MyName {
+    margin: 10px;
+    text-align: left;
+    font-size: 45px;
+    padding-bottom: 50px;
+    float: left;
+    background: #13293d;
+    color: #fff;
+  }
+
+  .headerbottom {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px; 
+    background-image: url("./mosaicJPG.JPG");
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  .workimages {
+      display: flex;
+      justify-content: space-between;
+      
+
+  }
+
+  .card{
+      display: flex;
+      flex-direction:column;
+      height: 200px;
+      width: 50%;
+      float: right;
+      margin-left: 50px;
+      flex: 1 0 200px;
+      text-align: left;
+  }
+  .card-colosseum {
+      display: flex;
+      flex-direction: row;
+      width: 25%;
+      height: 25%;
+  }
+
+  @media screen and (max-width: 768px)  {
+    .workimages {
+        flex-direction: column;
+        order: 3;
+    }  
+  }
