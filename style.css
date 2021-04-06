@@ -15,9 +15,22 @@
     background: #76797c;
   }
 
-  aside {
-
+  nav {
+  padding-top: 15px;
+  margin-left: 5px;
+  float: right;
+  font-size: 20px;
 }
+
+  ul {
+      list-style-type: none;
+  }
+
+  li{
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 150px;
+  }
   .MyName {
     margin: 10px;
     text-align: left;
@@ -28,15 +41,23 @@
     color: #fff;
   }
 
-  .headerbottom {
+  .mosaicJPG {
     height: 200px;
     width: 100%;
     margin-bottom: 25px; 
-    background-image: url("./mosaicJPG.JPG");
-    background-size: cover;
-    background-position: center;
-    
   }
+
+h2 {
+    margin: 10px;
+    text-align: right;
+    font-size: 35px;
+    padding-bottom: 50px;
+    background: #13293d;
+    color: #fff;
+  }
+   }
+    
+  /* }
 
   .workimages {
       display: flex;
@@ -67,4 +88,4 @@
         flex-direction: column;
         order: 3;
     }  
-  }
+  } */
