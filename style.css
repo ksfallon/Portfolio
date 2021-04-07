@@ -36,9 +36,12 @@
       margin-left: 25px;
   }
 
+
+
+
   .MyName {
     margin: 10px;
-    /* text-align: left; */
+    text-align: left;
     font-size: 45px;
     padding-bottom: 50px;
     float: left;
@@ -55,7 +58,7 @@
     background-position: center;
   }
 
-h2 {
+  h2 {
     margin: 10px;
     height: 20px;
     width: 25%;
@@ -68,7 +71,24 @@ h2 {
   } 
     
 
-  .workimages {
+  .alignleft {
+    height: 200px;
+    width: 200px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 60px;
+    border-right: solid 5px;
+    margin-right: 50px;
+  }
+
+  /* .alignright {
+    width: 75%;
+    float: right;
+    text-align: left;
+  } */
+  .
+  /* .workimages {
       display: flex;
       justify-content: space-between;
       
@@ -77,13 +97,13 @@ h2 {
 
   .card{
       display: flex;
-      flex-direction:column;
+      flex-direction:row;
       height: 200px;
       width: 50%;
       float: right;
       margin-left: 50px;
       flex: 1 0 200px;
-      /* text-align: left; */
+      text-align: left;
       border-style: solid;
       border-width: 5px;
   }
@@ -95,20 +115,20 @@ h2 {
   
   .card-colosseum {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     height: 200px;
     width: 50%;
     float: right;
     margin-left: 50px;
     flex: 2 1 200px;
-    /* text-align: left; */
+    text-align: left; */
     border-style: solid;
     border-width: 5px;
 
-  }
+  } */
 
-  @media screen and (max-width: 768px)  {
+  /* @media screen and (max-width: 768px)  {
     .workimages {
         flex-direction: column;
         order: 3;
-    }  
+    }   */
