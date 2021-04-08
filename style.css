@@ -51,6 +51,7 @@
   }
 
   .hero {
+    position: relative;
     height: 200px;
     width: 100%;
     background-image: url("./mosaicJPG.JPG");
@@ -62,29 +63,20 @@
     
   }
 
-  .hero h2 {
+  .bottomright {
     background-color: white;
     color: #13293d;
     font-size: 30px;
-    height: 20%;
-    width: 20%;
+    /* height: 20%; */
+    /* width: 20%; */
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
     /* display: flex;
     text-align: right;
     float: right */
   }
-
-  .card h2 {
-    /* margin: 10px; */
-    height: 20px;
-    width: 25%;
-    /* float: right; */
-    text-align: center;
-    font-size: 35px;
-    padding-bottom: 50px;
-    background: #13293d;
-    color: #fff;
-  } 
-    
+  
   .aboutme{
    display: flex;
 }
@@ -111,7 +103,6 @@
       display: flex;
       justify-content: space-between;
       
-
   }
 
   .card{
@@ -124,6 +115,7 @@
   
   .cardColosseum{
     display: flex;
+    position: relative;
     width: 70%;
     background-image: url(./colosseum.JPG);
     background-size: auto;
@@ -131,12 +123,14 @@
 
   .cardseaotter{
     display: flex;
+    position: relative;
     width: 70%;
     background-image: url(./seaotter.JPG);
     background-size: auto;
   }
 
   .cardHerculaneum{
+    position: relative;
     display: flex;
     width: 70%;
     background-image: url(./HerculaneumPic.JPG);
@@ -144,6 +138,7 @@
   }
 
   .cardsisters{
+    position: relative;
     display: flex;
     width: 70%;
     background-image: url(./sisters.JPG);
@@ -151,29 +146,31 @@
   }
 
   .cardNaples{
+    position: relative;
     display: flex;
     width: 70%;
     background-image: url(./musuemNaples.JPG);
     background-size: auto;
   }
-  .card h2{
-    margin: 10px;
+
+  .card h2 {
+    /* margin: 10px; */
     height: 20px;
     width: 25%;
-    float: right;
+    display: flex;
+    /* float: left; */
+    /* float: right; */
     text-align: center;
     font-size: 35px;
     padding-bottom: 50px;
     background: #13293d;
     color: #fff;
-  }
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+  } 
   
-  .card h2 {
-    display: flex;
-    float: left;
-  }
-  
-  .card-colosseum {
+  /* .card-colosseum {
     display: flex;
     flex-direction:row;
     height: 200px;
@@ -183,7 +180,7 @@
     flex: 2 1 200px;
     text-align: left;
     border-style: solid;
-    border-width: 5px;
+    border-width: 5px; */
 
   }
 
