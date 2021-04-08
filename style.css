@@ -9,18 +9,21 @@
     margin: 0;
   }
 
-  header {
+  .containerheader {
     display: flex;
     justify-content: space-between;
-    height: 75px;
+    height: 100px;
     width: 100%;
     background: #76797c;
   }
 
   header nav a {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+    /* display: flex; */
+    justify-content: flex-end;
+    /* padding-top: 30px; */
+    /* text-align: center; */
+    /* float: center; */
+    /* position: relative; */
     font-size: 20px;
     text-decoration: underline;
     color: white;
@@ -28,6 +31,7 @@
 
   header ul {
       list-style-type: none;
+      /* float: center */
   }
 
   header li {
@@ -40,12 +44,14 @@
 
 
   .MyName {
-    display:flex;
+    display:inline-block;
     /* margin: 10px; */
     text-align: center;
-    font-size: 45px;
-    padding-bottom: 50px;
-    float: left;
+    
+    font-size: 35px;
+    /* padding-bottom: 50px; */
+    /* float: left; */
+    position: relative;
     background: #13293d;
     color: #fff;
   }
@@ -102,6 +108,7 @@
   .work {
       display: flex;
       justify-content: space-between;
+      position: relative;
       
   }
 
@@ -115,59 +122,96 @@
   
   .cardColosseum{
     display: flex;
-    position: relative;
-    flex: 1 0 200px;
     height: 200px;
-    width: 400px;
+    align-items: flex-end;
+    border: 5px solid blue;
+    flex: 1;
+    /* height: 200px;
+    width: 400px; */
     /* width: 70%; */
-    background-image: url(./colosseum.JPG);
-    background-size: auto;
+    background: url(./colosseum.JPG) center/cover no-repeat;
+    /* background-size: auto; */
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .cardseaotter{
     display: flex;
-    position: relative;
+    height: 100px;
+    align-items: flex-end;
+    border: 5px solid blue;
+    flex: 1;
+    /* position: relative;
     flex: 1 0 200px;
     height: 200px;
-    width: 400px;
+    width: 400px; */
     /* width: 70%; */
     background-image: url(./seaotter.JPG);
-    background-size: auto;
+    /* background-size: auto; */
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .cardHerculaneum{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    flex: 1 0 200px;
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    /* flex: 1 0 200px; */
+    /* height: 200px; */
+    /* width: 400px; */
     /* width: 70%; */
     background-image: url(./HerculaneumPic.JPG);
-    background-size: auto;
+    /* background-size: auto; */
+    align-items: flex-end;
+    border: 5px solid blue;
+    flex: 1;
+    margin-bottom: 10px;
   }
 
   .cardsisters{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    flex: 1 0 200px;
+    height: 100px;
+    /* flex: 1 0 200px;
     height: 200px;
-    width: 400px;
+    width: 400px; */
     /* width: 70%; */
     background-image: url(./sisters.JPG);
-    background-size: auto;
+    /* background-size: auto; */
+    align-items: flex-end;
+    border: 5px solid blue;
+    flex: 1;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   .cardNaples{
-    position: relative;
+    /* position: relative; */
     display: flex;
-    flex: 1 0 200px;
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    /* flex: 1 0 200px; */
+    /* height: 200px; */
+    /* width: 400px; */
     /* width: 70%; */
     background-image: url(./musuemNaples.JPG);
-    background-size: auto;
+    /* background-size: auto; */
+    align-items: flex-end;
+    border: 5px solid blue;
+    flex: 1;
+    margin-bottom: 10px;
   }
 
+  .cardrow{
+    width: 49%;
+    /* flex: unset; */
+    flex-direction: row;
+  }
+
+  .cardrow2 {
+    width: 49%;
+    /* flex: unset; */
+    flex-direction: row;
+  }
   .card h2 {
     /* margin: 10px; */
     height: 20px;
@@ -198,7 +242,7 @@
     border-width: 5px;
     }  */
 
-    footer nav a {
+    /* footer nav a {
       display: flex;
       position: absolute;
       bottom: 10%;
@@ -219,11 +263,11 @@
     list-style-type: none;
     /* text-decoration: none; */
     /* color: white; */
-    margin-left: 25px;
-    }
+    /* margin-left: 25px;
+    } */ */
 
   /* @media screen and (max-width: 768px)  {
     .workimages {
         flex-direction: column;
         order: 3;
-    }   */
+    }   
