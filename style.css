@@ -40,8 +40,9 @@
 
 
   .MyName {
-    margin: 10px;
-    text-align: left;
+    display:flex;
+    /* margin: 10px; */
+    text-align: center;
     font-size: 45px;
     padding-bottom: 50px;
     float: left;
@@ -50,18 +51,33 @@
   }
 
   .hero {
-    padding: 0 0 20px 0;
+    height: 200px;
+    width: 100%;
     background-image: url("./mosaicJPG.JPG");
     display: flex;
-    align-items: flex-end;
-    justify-self: flex-end;
+    /* align-items: flex-end;
+    justify-self: flex-end; */
+    background-size: cover;
+    background-position: center;
+    
   }
 
-  h2 {
-    margin: 10px;
+  .hero h2 {
+    background-color: white;
+    color: #13293d;
+    font-size: 30px;
+    height: 20%;
+    width: 20%;
+    /* display: flex;
+    text-align: right;
+    float: right */
+  }
+
+  .card h2 {
+    /* margin: 10px; */
     height: 20px;
     width: 25%;
-    float: right;
+    /* float: right; */
     text-align: center;
     font-size: 35px;
     padding-bottom: 50px;
@@ -70,7 +86,7 @@
   } 
     
   .aboutme{
-  display: flex;
+   display: flex;
 }
   .alignleft {
     display: inline;
