@@ -1,4 +1,4 @@
-/{
+*{
     box-sizing: border-box;
   } 
   
@@ -17,11 +17,13 @@
     background: #76797c;
   }
 
-  nav {
+  nav a {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     font-size: 20px;
+    text-decoration: underline;
+    color: white;
 } 
 
   ul {
@@ -37,8 +39,6 @@
   }
 
 
-
-
   .MyName {
     margin: 10px;
     text-align: left;
@@ -49,13 +49,12 @@
     color: #fff;
   }
 
-  .headerbottom {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
+  .hero {
+    padding: 0 0 20px 0;
     background-image: url("./mosaicJPG.JPG");
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
   }
 
   h2 {
@@ -70,10 +69,13 @@
     color: #fff;
   } 
     
-
+  .aboutme{
+  display: flex;
+}
   .alignleft {
+    display: inline;
     height: 200px;
-    width: 200px;
+    width: 20vw;
     float: left;
     text-align: right;
     padding-right: 10px;
@@ -82,13 +84,14 @@
     margin-right: 50px;
   }
 
-  /* .alignright {
-    width: 75%;
+  .alignright {
+    width: 70%;
     float: right;
-    text-align: left;
-  } */
-  .
-  /* .workimages {
+    padding: 0px 25px;
+    font-size: 20px;
+  }
+
+  .work {
       display: flex;
       justify-content: space-between;
       
@@ -96,18 +99,59 @@
   }
 
   .card{
-      display: flex;
-      flex-direction:row;
-      height: 200px;
-      width: 50%;
-      float: right;
-      margin-left: 50px;
-      flex: 1 0 200px;
-      text-align: left;
-      border-style: solid;
-      border-width: 5px;
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+    /* background-image: url(./colosseum.JPG);  */
+    background-size: auto;
+  }
+  
+  .cardColosseum{
+    display: flex;
+    width: 70%;
+    background-image: url(./colosseum.JPG);
+    background-size: auto;
   }
 
+  .cardseaotter{
+    display: flex;
+    width: 70%;
+    background-image: url(./seaotter.JPG);
+    background-size: auto;
+  }
+
+  .cardHerculaneum{
+    display: flex;
+    width: 70%;
+    background-image: url(./HerculaneumPic.JPG);
+    background-size: auto;
+  }
+
+  .cardsisters{
+    display: flex;
+    width: 70%;
+    background-image: url(./sisters.JPG);
+    background-size: auto;
+  }
+
+  .cardNaples{
+    display: flex;
+    width: 70%;
+    background-image: url(./musuemNaples.JPG);
+    background-size: auto;
+  }
+  .card h2{
+    margin: 10px;
+    height: 20px;
+    width: 25%;
+    float: right;
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 50px;
+    background: #13293d;
+    color: #fff;
+  }
+  
   .card h2 {
     display: flex;
     float: left;
@@ -121,11 +165,11 @@
     float: right;
     margin-left: 50px;
     flex: 2 1 200px;
-    text-align: left; */
+    text-align: left;
     border-style: solid;
     border-width: 5px;
 
-  } */
+  }
 
   /* @media screen and (max-width: 768px)  {
     .workimages {
