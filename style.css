@@ -54,6 +54,10 @@
     position: relative;
     background: #13293d;
     color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+   padding-left: 50px;
   }
 
   .hero {
@@ -212,6 +216,13 @@
     /* flex: unset; */
     flex-direction: row;
   }
+
+  .cardall{
+    background-color: grey;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
   .card h2 {
     /* margin: 10px; */
     height: 20px;
@@ -266,8 +277,8 @@
     /* margin-left: 25px;
     } */ */
 
-  /* @media screen and (max-width: 768px)  {
+   /* @media screen and (max-width: 768px)  {
     .workimages {
         flex-direction: column;
         order: 3;
-    }   
+    }    */
