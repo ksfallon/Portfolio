@@ -71,7 +71,7 @@ header li {
   position: relative;
   height: 200px;
   width: 100%;
-  background-image: url("./mosaicJPG.JPG");
+  background-image: url('./images/mosaic.JPG');
   display: flex;
   /* align-items: flex-end;
   justify-self: flex-end; */
@@ -144,7 +144,7 @@ header li {
   /* background-size: auto; */
 }
 
-.cardColosseum{
+.bigcard{
   display: flex;
   height: 200px;
   align-items: flex-end;
@@ -153,10 +153,10 @@ header li {
   /* height: 200px;
   width: 400px; */
   /* width: 70%; */
-  background: url(./colosseum.JPG) center/cover no-repeat;
+  background: url(./images/colosseum.JPG) center/cover no-repeat;
   /* background-size: auto; */
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: .5%;
 }
 
 .cardseaotter{
@@ -169,11 +169,11 @@ header li {
   flex: 1 0 200px;
   height: 200px;
   width: 400px; */
-  width: 47%;
-  background-image: url(./seaotter.JPG);
+  width: 49%;
+  background-image: url(./images/seaotter.JPG);
   /* background-size: auto; */
   margin-bottom: 10px;
-  margin-right: 3%;
+  margin-right: 1%;
 }
 
 .cardHerculaneum{
@@ -182,9 +182,9 @@ header li {
   height: 100px;
   /* flex: 1 0 200px; */
   /* height: 200px; */
-  width: 47%;
+  width: 49%;
   /* width: 70%; */
-  background-image: url(./HerculaneumPic.JPG);
+  background-image: url(./images/herc.JPG);
   /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid blue;
@@ -196,30 +196,30 @@ header li {
   /* position: relative; */
   display: inline-flex;
   height: 100px;
-  width: 47%;
+  width: 49%;
   /* flex: 1 0 200px;
   height: 200px;
   width: 400px; */
   /* width: 70%; */
-  background-image: url(./sisters.JPG);
+  background-image: url(./images/sisters.JPG);
   /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid blue;
   flex: 1;
   margin-bottom: 10px;
-  margin-right: 10px;
+  margin-right: 1%;
 }
 
 .cardNaples{
   /* position: relative; */
   display: inline-flex;
   height: 100px;
-  width: 47%;
+  width: 49%;
   /* flex: 1 0 200px; */
   /* height: 200px; */
   /* width: 400px; */
   /* width: 70%; */
-  background-image: url(./musuemNaples.JPG);
+  background-image: url(./images/naples.JPG);
   /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid blue;
@@ -227,10 +227,14 @@ header li {
   margin-bottom: 10px;
 }
 
+.opaque:hover{
+  opacity: 0.5;
+  
+  }
+
 .cardrow{
   width: 100%;
-  /* flex: unset; */
-  /* flex-direction: row; */
+
 }
 
 .cardrow2 {
@@ -239,6 +243,7 @@ header li {
   /* flex-direction: row; */
 }
 
+
 .cardall{
   background-color: grey;
   margin-bottom: 10px;
@@ -246,9 +251,7 @@ header li {
   margin-top: 50px;
 }
 
-.opaque:hover{
-opacity: 0.5;
-}
+
 
 .cardall:hover{
   background-color: #13293d !important;
@@ -301,19 +304,19 @@ opacity: 0.5;
     color: black;
   } 
 
-  /* footer ul {
+  footer ul {
   list-style-type: none;
   }
 
   footer li {
   display: inline-block;
-  list-style-type: none; */
-  /* text-decoration: none; */
-  /* color: white; */
-  /* margin-left: 25px;
-  } */ */
+  list-style-type: none; 
+  text-decoration: none;
+  color: white; 
+  margin-left: 25px;
+  }
 
  /* @media screen and (max-width: 768px)  {
   .workimages {
       flex-direction: column;
-      order: 3; } */
+      order: 3; }
