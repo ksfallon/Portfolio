@@ -9,22 +9,14 @@
   --white: #fff;
 }
 
-.bottom {
-  bottom: 0;
-  position: absolute;
-}
-
 body {
   display: flex;
   flex-direction: column;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  background: #e1f3f8;
+  background: var(--light);
   justify-content: center;
-  color: #13293d;
-	/* background-size: 400% 400%;
-	animation: gradient 15s ease infinite; */
-  /* background-color: rgb(33, 113, 119); */
+  color: var(--dark);
 }
 
 .containerheader {
@@ -33,7 +25,7 @@ body {
   align-items: center;
   height: 100px;
   width: 100%;
-  background: #046b99;
+  background: var(--teal);
 }
 
 .containerheader nav a {
@@ -41,14 +33,14 @@ body {
   float: right;
   font-size: 20px;
   text-decoration: underline;
-  color: white;
+  color: var(--white);
   padding-right: 1em;
   
 } 
 
 .containerheader nav a:hover{
-  color:  #13293d;
-  background-color: white;
+  color:  var(--dark);
+  background-color: var(--white);
 }
 
 .containerheader li {
@@ -58,11 +50,9 @@ body {
 
 .MyName {
   display:inline-block;
-  /* text-align: center; */
   font-size: 35px;
-  /* position: relative; */
-  background: #13293d;
-  color: #fff;
+  background: var(--dark);
+  color: var(--white);
   margin-bottom: 10px;
   padding-bottom: 5px;
   margin-top: 10px;
@@ -84,8 +74,8 @@ body {
 }
 
 .herotext {
-  background-color: white;
-  color: #13293d;
+  background-color: var(--white);
+  color: var(--dark);
   font-size: 30px;
   position: absolute;
   bottom: 10%;
@@ -134,19 +124,6 @@ body {
     
 }
 
-/* .alignleftwork {
-  display: flex;
-  height: 420px;
-  width: 20vw;
-  float: left;
-  text-align: right;
-  padding: 25px 50px 25px 0px;
-  font-size: 45px;
-  border-right: solid 5px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-} */
-
 .card{
   display: flex;
   /* flex-direction: column; */
@@ -159,7 +136,7 @@ body {
   display: flex;
   height: 200px;
   align-items: flex-end;
-  border: 5px solid #046b99;
+  border: 5px solid var(--teal);
   flex: 1;
   /* height: 200px;
   width: 400px; */
@@ -174,7 +151,7 @@ body {
   display: inline-flex;
   height: 100px;
   align-items: flex-end;
-  border: 5px solid #046b99;
+  border: 5px solid var(--teal);
   flex: 1;
   /* position: relative;
   flex: 1 0 200px;
@@ -198,7 +175,7 @@ body {
   background-image: url(./images/herc.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid  #046b99;
+  border: 5px solid  var(--teal);
   flex: 1;
   margin-bottom: 10px;
 }
@@ -215,7 +192,7 @@ body {
   background-image: url(./images/sisters.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid  #046b99;
+  border: 5px solid var(--teal);
   flex: 1;
   margin-bottom: 10px;
   margin-right: 1%;
@@ -233,7 +210,7 @@ body {
   background-image: url(./images/naples.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid #046b99;
+  border: 5px solid var(--teal);
   flex: 1;
   margin-bottom: 10px;
 }
@@ -257,8 +234,8 @@ body {
 
 
 .cardall{
-  background-color:  #046b99;
-  color: white;
+  background-color:  var(--teal);
+  color: var(--white);
   margin-bottom: 10px;
   padding-bottom: 10px;
   margin-top: 50px;
@@ -266,8 +243,8 @@ body {
 
 
 .cardall:hover{
-  background-color: #13293d !important;
-  color: white !important;
+  background-color: var(--dark) !important;
+  color: var(--white) !important;
 }
 
 .card h2 {
@@ -280,8 +257,8 @@ body {
   text-align: center;
   font-size: 35px;
   padding-bottom: 50px;
-  background: #13293d;
-  color: #fff;
+  background: var(--dark);
+  color: var(--white);
   position: absolute;
   bottom: 10%;
   left: 10%;
@@ -303,13 +280,13 @@ body {
     /* position: relative; */
     font-size: 20px;
     text-decoration: underline;
-    color: #13293d;
+    color: var(--dark);
     padding-right: 1em;
   } 
   
   footer a:hover{
-    color: white;
-    background-color: #13293d;
+    color: var(--white);
+    background-color: var(--dark);
   }
   
   footer li {
@@ -335,13 +312,22 @@ body {
   } */
 
  @media screen and (max-device-width: 667px){
-  .alignleft {
+ 
+  .aboutme, .aboutmesection {
     display:flex;
-    border-right: none;
-    border-bottom: 5px solid;
-    text-align: center;
+    flex-direction: column;
  }
 
+ #pictureofme {
+   height: 250px !important;
+   width: 250px !important;
+ }
+
+
+ #work {
+   display: flex;
+   flex-direction: column !important;
+ }
  /* .cardNaples
  .cardseaotter
  .cardsisters
