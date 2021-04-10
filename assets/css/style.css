@@ -245,7 +245,7 @@ body {
     background-color: var(--dark);
   }
   
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 667px) {
     body  {
         width:100%;
         background-color:white;
@@ -371,7 +371,6 @@ body {
       
     }
 
-    }
     .contactme a  {
       display: flex;
       justify-content: flex-start;
@@ -381,6 +380,7 @@ body {
       margin: 5px;
     
   }
+}
   /* @media screen 
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
