@@ -2,6 +2,13 @@
   box-sizing: border-box;
 } 
 
+:root{
+  --light: #e1f3f8;
+  --teal: #046b99;
+  --dark: #13293d;
+  --white: #fff;
+}
+
 .bottom {
   bottom: 0;
   position: absolute;
@@ -41,7 +48,7 @@ body {
 
 .containerheader nav a:hover{
   color:  #13293d;
-  /* background-color: white; */
+  background-color: white;
 }
 
 .containerheader li {
@@ -320,35 +327,40 @@ body {
     /* float: left; */
   }
 
-  @media screen 
+  /* @media screen 
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio:1)  {
  
-  }
+  } */
 
- @media screen 
- and (min-device-width: 375px)
- and (max-device-width: 812px)
- and (-webkit-min-device-pixel-ratio:3)  {
-
+ @media screen and (max-device-width: 667px){
+  .alignleft {
+    display:flex;
+    border-right: none;
+    border-bottom: 5px solid;
+    text-align: center;
  }
 
- @media screen 
+ /* .cardNaples
+ .cardseaotter
+ .cardsisters
+ .cardHerculaneum {
+
+  width: 75%;
+  align-items: center; */
+
+  .bigcard {
+    width: 47%
+  }
+ }
+
+
+ /* @media screen 
  and (min-device-width: 1024px)
  and (max-device-width: 1366px)
  and (-webkit-min-device-pixel-ratio:2)  {
 
- }
+ } */
 
- /* @keyframes gradient { */
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+ 
