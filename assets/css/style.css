@@ -19,7 +19,7 @@ body {
   color: var(--dark);
 }
 
-.containerheader {
+.headerbox {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,28 +28,8 @@ body {
   background: var(--teal);
 }
 
-.containerheader nav a {
-  justify-content: flex-end;
-  float: right;
-  font-size: 20px;
-  text-decoration: underline;
-  color: var(--white);
-  padding-right: 1em;
-  
-} 
-
-.containerheader nav a:hover{
-  color:  var(--dark);
-  background-color: var(--white);
-}
-
-.containerheader li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
 .MyName {
-  display:inline-block;
+  display:flex;
   font-size: 35px;
   background: var(--dark);
   color: var(--white);
@@ -59,6 +39,26 @@ body {
   padding-top: 5px;
   padding-left: 50px;
   padding-right: 5px;
+}
+
+.headerbox nav a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  text-decoration: underline;
+  color: var(--white);
+  padding-right: 1em;
+  
+} 
+
+.headerbox nav a:hover{
+  color:  var(--dark);
+  background-color: var(--white);
+}
+
+.headerbox li {
+    display: inline-block;
+    margin-left: 25px;
 }
 
 .hero {
@@ -89,32 +89,28 @@ body {
 
 .alignleft {
   display: flex;
-  height: 150px;
+  height: 100%;
   width: 20vw;
-  float: left;
-  text-align: right;
+  justify-content: left;
+  text-align: center;
   padding: 25px 50px 25px 0px;
   font-size: 45px;
   border-right: solid 5px;
-  /* border-length: auto; */
   margin-right: 50px;
   margin-bottom: 10px;
 }
 
-/* is this section why i'm having trouble with spacing? */
-.alignrightaboutme {
-  width: 70%;
-  float: right;
-  padding: 0px 25px;
-  font-size: 20px;
+.aboutmesection{
+ display: flex;
 }
 
-.alignright {
-  width: 70%;
-  float: left;
-  padding: 0px 25px;
-  font-size: 20px;
-}
+ #pictureofme {
+    display: inline-flex;
+    height: 158px;;
+    width: 143.5;
+    justify-content: left;
+    margin: 5px;
+  }
 
 .work {
     display: flex;
@@ -124,12 +120,16 @@ body {
     
 }
 
+.alignright {
+  width: 70%;
+  justify-content: center;
+  padding: 0px 25px;
+  font-size: 20px;
+}
+
 .card{
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
-  /* width: 70%; */
-  /* background-size: auto; */
 }
 
 .bigcard{
@@ -138,11 +138,7 @@ body {
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
-  /* height: 200px;
-  width: 400px; */
-  /* width: 70%; */
   background: url(./images/colosseum.JPG) center/cover no-repeat;
-  /* background-size: auto; */
   margin-bottom: 10px;
   margin-right: .5%;
 }
@@ -153,27 +149,17 @@ body {
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
-  /* position: relative;
-  flex: 1 0 200px;
-  height: 200px;
-  width: 400px; */
   width: 49%;
   background-image: url(./images/seaotter.JPG);
-  /* background-size: auto; */
   margin-bottom: 10px;
   margin-right: 1%;
 }
 
 .cardHerculaneum{
-  /* position: relative; */
   display: inline-flex;
   height: 100px;
-  /* flex: 1 0 200px; */
-  /* height: 200px; */
   width: 49%;
-  /* width: 70%; */
   background-image: url(./images/herc.JPG);
-  /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid  var(--teal);
   flex: 1;
@@ -181,16 +167,10 @@ body {
 }
 
 .cardsisters{
-  /* position: relative; */
   display: inline-flex;
   height: 100px;
   width: 49%;
-  /* flex: 1 0 200px;
-  height: 200px;
-  width: 400px; */
-  /* width: 70%; */
   background-image: url(./images/sisters.JPG);
-  /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
@@ -199,24 +179,17 @@ body {
 }
 
 .cardNaples{
-  /* position: relative; */
   display: inline-flex;
   height: 100px;
   width: 49%;
-  /* flex: 1 0 200px; */
-  /* height: 200px; */
-  /* width: 400px; */
-  /* width: 70%; */
   background-image: url(./images/naples.JPG);
-  /* background-size: auto; */
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
   margin-bottom: 10px;
 }
 
-.opaque:hover{
-  /* opacity: 0.5; */
+.expand:hover{
   transform: scale(1.2);
   
   }
@@ -228,8 +201,6 @@ body {
 
 .cardrow2 {
   width: 100%;
-  /* flex: unset; */
-  /* flex-direction: row; */
 }
 
 
@@ -248,12 +219,9 @@ body {
 }
 
 .card h2 {
-  /* margin: 10px; */
   height: 20px;
   width: 25%;
   display: flex;
-  /* float: left; */
-  /* float: right; */
   text-align: center;
   font-size: 35px;
   padding-bottom: 50px;
@@ -271,13 +239,9 @@ body {
   }
 
   footer a {
-    /* display: flex; */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 30px; */
-    /* text-align: center; */
-    /* float: center; */
-    /* position: relative; */
     font-size: 20px;
     text-decoration: underline;
     color: var(--dark);
@@ -289,21 +253,7 @@ body {
     background-color: var(--dark);
   }
   
-  footer li {
-      display: inline-block;
-      list-style-type: none;
-      text-decoration: none;
-      /* color: white; */
-      margin-left: 25px;
-  }
-  
-  #pictureofme {
-    display: inline-flex;
-    height: 158px;;
-    width: 143.5;
-    /* float: left; */
-  }
-
+ 
   /* @media screen 
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
