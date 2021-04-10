@@ -11,7 +11,7 @@ body {
 
 .containerheader {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex;
   align-items: center;
   height: 100px;
   width: 100%;
@@ -19,12 +19,7 @@ body {
 }
 
 header nav a {
-  /* display: flex; */
   justify-content: flex-end;
-  /* padding-top: 30px; */
-  /* text-align: center; */
-  /* float: center; */
-  /* position: relative; */
   font-size: 20px;
   text-decoration: underline;
   color: white;
@@ -49,12 +44,10 @@ header li {
     margin-left: 25px;
 }
 
-
 .MyName {
   display:inline-block;
   /* margin: 10px; */
   text-align: center;
-  
   font-size: 35px;
   /* padding-bottom: 50px; */
   /* float: left; */
@@ -116,7 +109,7 @@ header li {
   width: 70%;
   float: right;
   padding: 0px 25px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .work {
@@ -133,10 +126,11 @@ header li {
   width: 20vw;
   float: left;
   text-align: right;
- padding: 25px 50px 25px 0px;
+  padding: 25px 50px 25px 0px;
   font-size: 45px;
   border-right: solid 5px;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .card{
@@ -256,9 +250,7 @@ header li {
 }
 
 
-
 .cardall:hover{
-  opacity: ;
   background-color: #13293d !important;
   color: white !important;
 }
@@ -280,37 +272,61 @@ header li {
   left: 10%;
 } 
 
-  footer {
+  .contactme {
     display: flex;
+
   }
-   footer a {
-    justify-content: flex-end; 
-    /* position: absolute;
-    bottom: 10%;
-    center: 50%; */
-    justify-content: flex-end;
-    align-items: center;
+
+  footer a {
+    /* display: flex; */
+    justify-content: center;
+    /* padding-top: 30px; */
+    /* text-align: center; */
+    /* float: center; */
+    /* position: relative; */
+    font-size: 20px;
     text-decoration: underline;
-    background-color: #13293d;
-    color: #fff;
+    color: #13293d;
     padding-right: 1em;
-    bottom: 0;
-} 
-
-  footer li {
-  display: inline-block;
-  /* list-style-type: none;  */
-  text-decoration: none;
-  color: white; 
-  margin-left: 25px;
-  bottom: 0;
+  } 
+  
+  footer a:hover{
+    color: white;
+    background-color: #13293d;
   }
-
+  
+  footer li {
+      display: inline-block;
+      list-style-type: none;
+      text-decoration: none;
+      /* color: white; */
+      margin-left: 25px;
+  }
+  
   #pictureofme {
+    display: inline-flex;
     height: 158px;;
     width: 143.5;
-    float: left;
+    /* float: left; */
+  }
+
+  @media screen 
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio:1)  {
+ 
   }
 
  @media screen 
- and (max-width: 768px)  {
+ and (min-device-width: 375px)
+ and (max-device-width: 812px)
+ and (-webkit-min-device-pixel-ratio:3)  {
+
+ }
+
+ @media screen 
+ and (min-device-width: 1024px)
+ and (max-device-width: 1366px)
+ and (-webkit-min-device-pixel-ratio:2)  {
+
+ }
