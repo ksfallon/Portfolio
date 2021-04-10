@@ -2,11 +2,22 @@
   box-sizing: border-box;
 } 
 
+.bottom {
+  bottom: 0;
+  position: absolute;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
+  background: #e1f3f8;
+  justify-content: center;
+  color: #13293d;
+	/* background-size: 400% 400%;
+	animation: gradient 15s ease infinite; */
+  /* background-color: rgb(33, 113, 119); */
 }
 
 .containerheader {
@@ -15,7 +26,7 @@ body {
   align-items: center;
   height: 100px;
   width: 100%;
-  background: #76797c;
+  background: #046b99;
 }
 
 .containerheader nav a {
@@ -78,6 +89,7 @@ body {
  display: flex;
  margin-bottom: 10px;
 }
+
 .alignleft {
   display: flex;
   height: 150px;
@@ -87,15 +99,24 @@ body {
   padding: 25px 50px 25px 0px;
   font-size: 45px;
   border-right: solid 5px;
+  /* border-length: auto; */
   margin-right: 50px;
   margin-bottom: 10px;
 }
 
-.alignright {
+/* is this section why i'm having trouble with spacing? */
+.alignrightaboutme {
   width: 70%;
   float: right;
   padding: 0px 25px;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.alignright {
+  width: 70%;
+  float: left;
+  padding: 0px 25px;
+  font-size: 20px;
 }
 
 .work {
@@ -106,7 +127,7 @@ body {
     
 }
 
-.alignleftwork {
+/* .alignleftwork {
   display: flex;
   height: 420px;
   width: 20vw;
@@ -117,7 +138,7 @@ body {
   border-right: solid 5px;
   margin-right: 50px;
   margin-bottom: 10px;
-}
+} */
 
 .card{
   display: flex;
@@ -131,7 +152,7 @@ body {
   display: flex;
   height: 200px;
   align-items: flex-end;
-  border: 5px solid blue;
+  border: 5px solid #046b99;
   flex: 1;
   /* height: 200px;
   width: 400px; */
@@ -146,7 +167,7 @@ body {
   display: inline-flex;
   height: 100px;
   align-items: flex-end;
-  border: 5px solid blue;
+  border: 5px solid #046b99;
   flex: 1;
   /* position: relative;
   flex: 1 0 200px;
@@ -170,7 +191,7 @@ body {
   background-image: url(./images/herc.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid blue;
+  border: 5px solid  #046b99;
   flex: 1;
   margin-bottom: 10px;
 }
@@ -187,7 +208,7 @@ body {
   background-image: url(./images/sisters.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid blue;
+  border: 5px solid  #046b99;
   flex: 1;
   margin-bottom: 10px;
   margin-right: 1%;
@@ -205,7 +226,7 @@ body {
   background-image: url(./images/naples.JPG);
   /* background-size: auto; */
   align-items: flex-end;
-  border: 5px solid blue;
+  border: 5px solid #046b99;
   flex: 1;
   margin-bottom: 10px;
 }
@@ -229,7 +250,8 @@ body {
 
 
 .cardall{
-  background-color: grey;
+  background-color:  #046b99;
+  color: white;
   margin-bottom: 10px;
   padding-bottom: 10px;
   margin-top: 50px;
@@ -260,12 +282,14 @@ body {
 
   .contactme {
     display: flex;
+    height: 150px;
 
   }
 
   footer a {
     /* display: flex; */
     justify-content: center;
+    align-items: center;
     /* padding-top: 30px; */
     /* text-align: center; */
     /* float: center; */
@@ -316,3 +340,15 @@ body {
  and (-webkit-min-device-pixel-ratio:2)  {
 
  }
+
+ /* @keyframes gradient { */
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
