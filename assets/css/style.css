@@ -65,7 +65,7 @@ body {
   position: relative;
   height: 135px;
   width: 100%;
-  background-image: url('./images/mosaic.JPG');
+  background-image: url(../images/mosaic.JPG);
   display: flex;
   background-size: cover;
   background-position: center;
@@ -134,8 +134,7 @@ body {
   height: 200px;
   align-items: flex-end;
   border: 5px solid var(--teal);
-  /* flex: 1; */
-  background: url(./images/colosseum.JPG) center/cover no-repeat;
+  background: url(../images/colosseum.JPG) center/cover no-repeat;
   margin-bottom: 10px;
   margin-right: .5%;
 }
@@ -147,7 +146,7 @@ body {
   border: 5px solid var(--teal);
   flex: 1;
   width: 49%;
-  background-image: url(./images/seaotter.JPG);
+  background-image: url(../images/seaotter.JPG);
   margin-bottom: 10px;
   margin-right: 1%;
 }
@@ -156,7 +155,7 @@ body {
   display: inline-flex;
   height: 100px;
   width: 49%;
-  background-image: url(./images/herc.JPG);
+  background-image: url(../images/herc.JPG);
   align-items: flex-end;
   border: 5px solid  var(--teal);
   flex: 1;
@@ -167,7 +166,7 @@ body {
   display: inline-flex;
   height: 100px;
   width: 49%;
-  background-image: url(./images/sisters.JPG);
+  background-image: url(../images/sisters.JPG);
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
@@ -179,7 +178,7 @@ body {
   display: inline-flex;
   height: 100px;
   width: 49%;
-  background-image: url(./images/naples.JPG);
+  background-image: url(../images/naples.JPG);
   align-items: flex-end;
   border: 5px solid var(--teal);
   flex: 1;
@@ -233,7 +232,6 @@ body {
 
   .contactme a {
     display: inline-flex;
-    /* justify-content: right; */
     font-size: 20px;
     text-decoration: underline;
     color: var(--dark);
@@ -392,7 +390,6 @@ body {
 
   .headerbox nav a {
       display: flex;
-      justify-content: space-between;
       width:100%;
       top: 10px;
       font-size: 18px;
@@ -466,10 +463,8 @@ body {
 
   .contactme a  {
     display: flex;
-    justify-content: center;
     width:100%;
     top: 10px;
-    /* margin: 5px; */
     font-size: 18px;
   
 }
