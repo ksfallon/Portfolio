@@ -2,12 +2,17 @@
   box-sizing: border-box;
 } 
 
+/* using the root and var so I can ensure i'm using the same 4 colors throughout my webpage */
+/* also these colors were recommended for website accessibility */
 :root{
   --light: #e1f3f8;
   --teal: #046b99;
   --dark: #13293d;
   --white: #fff;
 }
+
+/* need to make sure display:flex is used in the main sections, esp body to help the elements of the page move while the screen size changes  */
+/* /* also these fonts were recommended for website accessibility */
 
 body {
   display: flex;
@@ -19,6 +24,7 @@ body {
   color: var(--dark);
 }
 
+/* justify-content:space-between moved my nav bar to the right side*/
 .headerbox {
   display: flex;
   justify-content: space-between;
@@ -56,6 +62,7 @@ body {
   background-color: var(--white);
 }
 
+/* important to have display: inline-block to get the links in a row instead of a column */
 .headerbox li {
     display: inline-block;
     margin-left: 25px;
@@ -87,6 +94,7 @@ body {
  margin-bottom: 10px;
 }
 
+/* display:flex and justify-content:left get the headers on the left side of the page and they adjust accordingly as the screen size changes. */
 .alignleft {
   display: flex;
   height: 100%;
@@ -129,6 +137,7 @@ body {
   font-size: 20px;
 }
 
+/* height sets it to twice the height of the other images */
 .bigcard{
   display: flex;
   height: 200px;
@@ -139,6 +148,7 @@ body {
   margin-right: .5%;
 }
 
+/* width is set to 49% so both cards can sit on the same row, inline-flex also helpes with this */
 .cardseaotter{
   display: inline-flex;
   height: 100px;
@@ -185,11 +195,13 @@ body {
   margin-bottom: 10px;
 }
 
+/* this hover feature will transform the size of the image when you over the mouse of it */
 .expand:hover{
   transform: scale(1.2);
   
   }
 
+  /* to ensure that these rows have two cards in them */
 .cardrow
 .cardrow2 {
   width: 100%;
@@ -223,6 +235,7 @@ body {
   left: 10%;
 } 
 
+/* the combo of display flex and align-items:center was how the bottom links became located towrd the middle of the contact me title */
   .contactme {
     display: flex;
     height: 150px;
@@ -238,11 +251,15 @@ body {
     padding-right: 1em;
   } 
   
+  /* this hover changes the font color and background cover of the links when cursor hovers over the links */
   .contactme a:hover{
     color: var(--white);
     background-color: var(--dark);
   }
   
+  /* these were needed to help the website go from desktop to tablet to cell phone. */
+  
+  /* This one is for cell phones */
   @media screen and (max-width: 667px) {
     body  {
       display: flex;
@@ -268,6 +285,7 @@ body {
         width:100%;
     }
 
+    /* flex-end was necessary to get the text in the correct location within the screen */
     .herotext {
       display: flex;
       justify-content: flex-end;
@@ -276,6 +294,7 @@ body {
       margin: 5px;
   }
 
+  /* the sections because columns using flex-direction: column; for easier phone reading */
     .aboutme {
     display: flex;
     flex-direction: column;
@@ -299,6 +318,7 @@ body {
 
     }
 
+    /* its not longer on the same line as my image so can take up more space */
     .aboutmesection p {
       width:100%;
     }
@@ -309,6 +329,8 @@ body {
       height: 158px;
       width: 143.5px;
     }
+
+      /* the sections because columns using flex-direction: column; for easier phone reading */
 
     .work {
     display: flex;
@@ -323,6 +345,8 @@ body {
       width:100%;
       justify-content: center;
       }
+    
+      /* all of the cards are within their own rows now so they all now have 100% view screen */
     .bigcard{
         width:100%;
         height:100px;
@@ -359,12 +383,13 @@ body {
         bottom:10px;
     }
     
+    /* done to get the contact me to the correct size */
     .contactme {
       display: flex;
       width:50%;
       
     }
-
+ /* had to change font sizes to fit */
     .contactme a  {
       display: flex;
       justify-content: flex-start;
@@ -376,6 +401,7 @@ body {
   }
 }
 
+/* slight changes made to fix the stacking of the work images */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   
   body  {
@@ -406,6 +432,7 @@ body {
     margin-right: 50px;
     margin-bottom: 10px;
   }
+
   .work {
     display: flex;
     flex-direction: row;
@@ -425,7 +452,7 @@ body {
         justify-content: right;
         width:100%;
         }
-      
+      /* similar to cellphone, all images now in own row so they take up 100% */
     .bigcard{
         width:100%;
         height:100px;
@@ -461,6 +488,7 @@ body {
     
   }
 
+  /* changes font to it fit on page */
   .contactme a  {
     display: flex;
     width:100%;
